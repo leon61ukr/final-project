@@ -1,13 +1,26 @@
 body {
-    max-width: 1250px;
+    max-width: 1000px;
     margin: auto;
 }
 
 h2 {
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin: 15px 15px 10px 15px;
+}
+
+.navbar {
+    padding-left: 0px;
 }
 
 .jumbotron {
-    margin-bottom: 10px;
+    padding: 32px 16px 10px 16px;
+    margin-bottom: 0; 
+}
+
+.footer img{
+  margin: 10px 3px 0 3px; 
+  height: 30px;
+}
+
+#send-form-button {
+    margin-bottom: 16px;
 }
