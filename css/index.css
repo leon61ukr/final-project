@@ -3,13 +3,11 @@ body {
     margin: auto;
 }
 
-nav-tabs-link-hover-border-color{
-    color: green;
-}  
-
-.navbar .brand, .navbar .nav > li > a {
-    color: #D64848;
+h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
-.navbar .brand, .navbar .nav > li > a:hover {
-    color: #F56E6E;
+
+.jumbotron {
+    margin-bottom: 10px;
 }
