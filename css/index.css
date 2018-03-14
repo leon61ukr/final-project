@@ -24,3 +24,8 @@ h2 {
 #send-form-button {
     margin-bottom: 16px;
 }
+
+#footerlinks {
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 0.3rem;
+}

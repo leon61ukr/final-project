@@ -27,7 +27,8 @@
         <meta name="theme-color" content="#ffffff">
         <!--FaviconEnd-->
     </head>
-    <body class="preload">
+    <body>
+    <!--<body class="preload">-->
         <div class="container">
             <header>
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -43,19 +44,19 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link smooth" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Photos</a>
+                                <a class="nav-link smooth" href="#">Photos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Videos</a>
+                                <a class="nav-link smooth" href="#video">Video</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Events</a>
+                                <a class="nav-link smooth" href="#">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link smooth" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -75,11 +76,33 @@
                     First took part in official competitions in 2014.</p>
                 </div>
                 
-                <div class="container-fluid">
+                
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                        <img src="images/photos/3pbp.jpg" alt="..." class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="images/photos/4zb.jpg" alt="..." class="img-fluid">
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img src="images/photos/5plp.jpg" alt="..." class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="images/photos/6dr.jpg" alt="..." class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+                <div class=".container-fluid">
+                <img src="images/photos/yurchenko-valeriy-main-selfie-01.jpg" alt="..." class="img-fluid">
                 <!--cool image grid HERE-->
                 </div>
                 
-                <h2>Video</h2>
+                <h2 id="video">Video</h2>
                 <div>
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MBn8Tl_2wYQ"></iframe>
@@ -330,7 +353,7 @@
                 <div class="container text-center">
                     <form action="https://formspree.io/&#108;&#101;&#111;&#110;&#54;&#49;&#64;&#117;&#107;&#114;&#46;&#110;&#101;&#116;" method="POST">
                         <fieldset>
-                            <h2>Contact</h2>
+                            <h2 id="contact">Contact</h2>
                             <div class="form-group row">
                                 <label for="client-name" class="col-sm-4 col-form-label text-right d-none d-sm-block">Your name</label>
                                 <div class="col-sm-6">
@@ -384,9 +407,9 @@
                         <img src="images/social/google.png" alt="google plus logo">
                     </a>
                 </div>
-                <div class="footer footer-copyright py-1 text-center d-flex justify-content-center">
-                    © 2018 Copyright:
-                    <a href="#">LeoN61</a>
+                <div class="footer footer-copyright py-1 text-center">
+                    © 2018 Copyright: 
+                    <a href="#"> LeoN61</a>
                 </div>
             </footer>
         </div>
@@ -402,6 +425,35 @@
             new WOW().init();
         </script>
         
+        <script>
+
+        </script>
+        
+        // <script>
+        // $('#collapseDiv').on('shown.bs.collapse', function () {
+        //   $(".glyphicon").removeClass("glyphicon-folder-close").addClass("glyphicon-folder-open");
+        // });
+        
+        // $('#collapseDiv').on('hidden.bs.collapse', function () {
+        //   $(".glyphicon").removeClass("glyphicon-folder-open").addClass("glyphicon-folder-close");
+        // });
+        // </script>
+        
         <script src="js/index.js"></script>
+        
+        <script>
+
+            function init() {
+            // выходим, если функция уже выполнялась
+            if (arguments.callee.done) return;
+            
+            // устанавливаем флаг, чтобы функция не исполнялась дважды
+            arguments.callee.done = true;
+            
+            $('.main').show();
+            };
+            
+            window.onload = init;
+        </script>
     </body>
 </html>
