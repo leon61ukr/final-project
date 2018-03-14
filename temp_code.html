@@ -35,3 +35,15 @@
                 <!--    <div style="overflow: hidden;"><img src="https://s7d5.scene7.com/is/image/Specialized/6611?$hd$" style="padding: 0px; margin: 0px; border: 0px; width: auto; height: auto; position: relative;></div></div>-->
                 <!--    <div class="MagicZoomPup" style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 734px; height: 67px; opacity: 0.5; left: 478px; top: 66.5px;"></div></a>-->
                 <!--</div>-->
+                
+
+<script>
+        $('#collapseDiv').on('shown.bs.collapse', function () {
+          $(".nav-link").removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
+        });
+        
+        $('#collapseDiv').on('hidden.bs.collapse', function () {
+          $(".nav-link").removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
+        });
+</script>
+
